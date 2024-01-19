@@ -1,0 +1,70 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url(images/cheese-background.webp);
+    background-size: auto;
+}
+
+/* Structure */
+
+#content {
+    background: #182940;
+    padding: 5px;
+    width: 80%;
+    margin: auto; /* center horizontally */
+    border-radius: 5px;
+    /* margin-bottom: 10px; */
+}
+
+.gallery {
+    width: 300px;
+    padding: 5px;
+    border: 2px solid #3A669E;
+}
+
+/* Navigation */
+
+#main-nav a {
+    text-decoration: none;
+    color: #F2F2F2;
+    padding: 5px;
+}
+
+#main-nav a:hover {
+    background: #3A669E;
+    color: #D99962;
+}
+
+
+/* Typography */
+
+h1, h2 {
+    color: #D99962;
+}
+
+.history-section, .image-caption {
+    color: #F2F2F2;
+}
+
+.image-caption {
+    font-style: italic;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: #3A669E;
+}
+
+th, td {
+    border: 2px solid #F2F2F2;
+    color: #F2F2F2;
+    padding: 15px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #49668C;
+}
+
+tr:hover {
+    background-color: #182940;
+}
