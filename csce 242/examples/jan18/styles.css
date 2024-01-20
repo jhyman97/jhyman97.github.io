@@ -78,7 +78,7 @@ h1 {
 
     #main-nav li {
         text-align: center;
-        border-bottom: 2px none transparent;
+        border-bottom: 2px solid transparent;
     }
 
     #main-nav li:hover {
