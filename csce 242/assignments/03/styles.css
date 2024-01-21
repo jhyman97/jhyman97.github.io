@@ -1,25 +1,46 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: lightgray;
+    background: #010326;
 }
 
 /* Structure */
 
 #content {
-    background: #fff;
     padding: 5px;
     width: 80%;
-    margin: auto; /* center horizontally */
+    margin: auto;
     border-radius: 5px;
 }
 
 #main-header,
-#main-content,
 #main-footer {
-    background: cornflowerblue;
-    padding: 5px;
+    background: transparent;
+}
+
+#main-content,
+.col1of4-links-nav,
+.col3of4,
+.col1of3 {
+    border: 1px solid #45BFBF;
+}
+
+#main-content {
+    background: #260101;
     margin-bottom: 10px;
-    border: 1px solid orange;
+}
+
+.col1of4-bottom {
+    padding: 10px;
+}
+
+.bottom {
+    background: #45BFBF;
+}
+
+.col3of4 h2,
+.col4of5 h3,
+.col4of5 aside {
+    padding: 5px;
 }
 
 /* Main Navigation */
@@ -34,62 +55,98 @@ body {
 }
 
 #main-nav li {
+    padding: 5px;
+    text-align: center;
     background: #A020F0;
-    border: 1px solid orange;
+    border: 1px solid #45BFBF;
 }
+
+#links-nav ul {
+    padding-left: 0px;
+    margin: 20px;
+}
+
 
 #main-nav a {
     text-decoration: none;
+    color: #FFFFFF
 }
 
 #links-nav a {
-    color: orange;
+    color: #A020F0;
+}
+
+img {
+    display: block;
+    margin: auto;
 }
 
 
 /* Typography */
 
-h1, h3 {
+h1, 
+.col1of4-bottom h3,
+#main-footer p {
     text-align: center;
 }
 
-h1 {
-    color: orange;
+.col1of4-links-nav h3 {
+    padding-left: 0px;
+    margin: 20px;
+}
+
+h1,
+h2,
+.col4of5 h3,
+aside,
+.col1of4-links-nav h3,
+#main-footer p {
+    color: #45BFBF;
+}
+
+.col1of4-bottom h3,
+.col1of4-bottom aside  {
+    color: #FFFFFF;
+}
+
+.col1of4-bottom aside {
+    padding: 10px;
+    margin: 10px;
 }
 
 /* For larger resolutions */
 @media only screen and (min-width: 768px) {
 
-    .columns {
+    .columns,
+    .bottom {
         display: flex;
     }
 
+    .bottom section, 
     .columns section {
         padding: 5px 20px;
     }
     
-
-    .one,
+    .col1of5,
+    .col1of4-bottom,
+    .col1of4-links-nav, 
+    .col1of3, 
     #main-nav li {
         flex: 1;
     }
 
-    .three {
+    .col3of4 {
         flex: 3;
     }
 
-    .four {
+    .col4of5 {
         flex: 4;
     }
 
-    .one img {
-        margin: auto;
-        display: block;
-    }
-
-    .one p {
+    .col1of5 p {
         align-items: center;
     }
+
 
     #main-nav li {
         text-align: center;
