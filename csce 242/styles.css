@@ -15,33 +15,84 @@ body {
 
 /* Navigation */
 
-#main-nav ol li::marker, #main-nav a {
-    color: #F2F2F2;
+#main-nav li {
+    margin: 6px;
+    list-style-type: none;
+}
+
+#main-nav ul {
+    padding-left: 0;
 }
 
 #main-nav li {
-    margin: 6px;
+    background: #227D80;
 }
 
 #main-nav a {
     text-decoration: none;
     color: #F2F2F2;
-    padding: 4px;
-    margin: 3px;
+    /* padding: 4px; */
+    /* margin: 3px; */
     border-radius: 4px;
+    /* background: #227D80; */
 }
 
-#main-nav a:hover {
-    background: #227D80;
-    /* border-radius: 4px; */
+section img {
+    max-width: 80%;
+    margin: auto;
+    display: block;
 }
+
+section {
+    padding: 5px 20px;
+}
+
+/* #main-nav a:hover {
+    background: #227D80;
+    border-radius: 4px;
+} */
 
 /* Typography */
 
+h3, aside {
+    text-align: center;
+}
+
 h1, h2 {
     color: #7CBEBF;
+    text-align: center;
 }
 
 #about-section {
     color: #F2F2F2;
+}
+
+/* For larger resolutions */
+@media only screen and (min-width: 768px) {
+    .flex-container {
+        display: flex;
+    }
+
+    /* .flex-container section {
+        padding: 5px 20px; 
+    } */
+
+    #main-nav li {
+        flex: 1;
+        text-align: center;
+    }
+
+    #main-nav p {
+        display: block;
+        margin: auto;
+    }
+
+    /* aside p {
+        display: block; */
+        /* margin: auto;
+    } */
+/* 
+    .flex-container img {
+        max-width: 80%;
+    } */
 }
