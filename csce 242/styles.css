@@ -32,27 +32,30 @@ body {
     padding: 5px 20px;
 }
 
-
 /* Navigation */
 
-#main-nav li {
+.main-nav li {
     margin: 6px;
     list-style-type: none;
 }
 
-#main-nav ul {
+.main-nav ul {
     padding-left: 0;
 }
 
-#main-nav li {
+.main-nav li {
     background: #227D80;
 }
 
-#main-nav a {
+.main-nav a {
     text-decoration: none;
     color: #F2F2F2;
     border-radius: 4px;
 }
+
+/* #temp {
+    flex-basis: 200px;
+} */
 
 /* Typography */
 
@@ -90,8 +93,9 @@ h1, h2 {
         flex-direction: column;
     }
 
-    #main-nav li {
-        flex: 1;
+    .main-nav li {
+        flex: 33%;
+        flex-grow: 0;
     }
     
     #main-header h2 {
@@ -102,5 +106,6 @@ h1, h2 {
         margin-top: 0px;
         order: 2;
     }
+
 
 }
