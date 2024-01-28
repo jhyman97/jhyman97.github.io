@@ -47,15 +47,25 @@ body {
     background: #227D80;
 }
 
+.main-nav li:hover {
+    animation-name: play-li;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
 .main-nav a {
     text-decoration: none;
     color: #F2F2F2;
     border-radius: 4px;
 }
 
-/* #temp {
-    flex-basis: 200px;
-} */
+/* Animations */
+@keyframes play-li {
+    100% {
+        background: #051414;
+    }
+}
+
 
 /* Typography */
 
