@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightgray;
+}
+
+/* Structure */
+
+#content {
+    background: #fff;
+    padding: 5px;
+    width: 80%;
+    margin: auto; /* center horizontally */
+    border-radius: 5px;
+}
+
+#placeholder {
+    max-width: 25%;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Typography */
+
+h1 {
+    color: darkslategray;
+}
+
+.special {
+    background: lightpink;
+    color: magenta;
+    size: 2em;
+    border: 2px dotted magenta;
+}
