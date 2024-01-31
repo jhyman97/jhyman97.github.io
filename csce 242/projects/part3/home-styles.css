@@ -1,0 +1,180 @@
+:root {
+    --bg-color: #FFFFFF;
+    --content-bg-color: lightgray;
+    --main-nav-link-color: #000000;
+    --link-hover-color: rgb(247, 247, 247);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Structure */
+.col-1-of-3 {
+    /* border: 3px solid #000000; */
+    margin: 15px 0px;
+}
+
+.header-top-container,
+.header-bottom-container,
+#most-popular {
+    background: var(--content-bg-color);
+    border-radius: 20px;
+}
+
+.header-bottom-container {
+    margin-top: 20px;
+}
+
+.signin-form,
+.main-logo,
+.your-cart {
+    padding: 20px 0px;
+}
+
+#most-popular {
+    padding: 20px 0px;
+}
+
+.col-1-of-4 {
+    text-align: center;
+    padding-top: 20px;
+    margin: 10px 20px;
+    padding-bottom: 10px;
+    /* border: 1px solid #000000; */
+}
+
+.col-1-of-4 img {
+    display: block;
+    margin: auto;
+}
+
+.carousel {
+    background-image: url(https://place-hold.it/1500x300);
+    background-size: 100%;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0px;
+    margin: 30px 0px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+footer p {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.input-box {
+    margin-bottom: 5px;
+}
+
+#login-button {
+    margin-left: 5px;
+}
+
+#content {
+    background: var(--bg-color);
+    padding: 5px;
+    margin: auto; /* center horizontally */
+    border-radius: 5px;
+}
+
+.main-logo img {
+    display: block;
+    margin: auto;
+}
+
+.main-logo a {
+    display: block; 
+    margin: auto;
+}
+
+.signin-form,
+.your-cart {
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-form h3 {
+    margin-top: 0px;
+}
+
+/* Navigation */
+#main-nav li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+#main-nav ul {
+    padding-left: 0;
+    text-align: center;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: var(--main-nav-link-color);
+    font-size: 30px;
+}
+
+.col-1-of-4 a {
+    text-decoration: none;
+    color: var(--main-nav-link-color);
+}
+
+.col-1-of-4 {
+    background-color: var(--link-hover-color);
+    border-radius: 10px;
+}
+/* .col-1-of-4 a:hover {
+    
+} */
+
+#most-popular h2 {
+    text-align: center;
+}
+
+/* Typography */
+
+/* For larger resolutions */
+@media only screen and (min-width: 768px) {
+    .columns,
+    .bottom-flex-container {
+        display: flex;
+    }
+
+    #content {
+        width: 80%;
+    }
+
+    .header-top-container {
+        justify-content: space-between;
+    }
+
+    .col-1-of-3,
+    .col-1-of-4,
+    #main-nav li,
+    #main-nav {
+        flex: 1;
+    }
+
+    .signin-form {
+        justify-content: flex-start;
+        padding-left: 80px;
+    }
+
+    #most-popular h2 {
+        text-align: left;
+        padding-left: 40px;
+    }
+
+    .your-cart {
+        justify-content: flex-end;
+        padding-right: 110px;
+    }
+
+}
