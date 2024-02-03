@@ -34,6 +34,11 @@ body {
     display: flex;
 }
 
+footer p {
+    text-align: center;
+    padding-top: 20px;
+}
+
 .input-box {
     margin-bottom: 5px;
 }
@@ -87,12 +92,35 @@ body {
 
 /* Typography */
 
-h1 {
-    color: darkslategray;
+/* Hamburger menu */
+#hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--main-nav-link-color);
+    margin: 6px 0;
+    padding-left: 5px;
+}
+
+#hamburger {
+    margin: auto;
+    background-color: var(--content-bg-color);
+    border-radius: 20px;
+    width: 30px;
+    /* margin: 30px; */
+    padding: 10px 30px;
+}
+
+.hide {
+    display: none;
 }
 
 /* For larger resolutions */
 @media only screen and (min-width: 768px) {
+
+    #hamburger {
+        display: none;
+    }
+
     .columns {
         display: flex;
     }

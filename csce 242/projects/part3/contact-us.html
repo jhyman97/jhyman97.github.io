@@ -4,8 +4,8 @@
         <!--
             Author: Johnny Hyman
         -->
-        <title>Home</title>
-        <link rel="stylesheet" href="home-styles.css">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="contact-us-styles.css">
     </head>
 
     <body>
@@ -48,48 +48,32 @@
                 </div>
             </header>
             <main>
-                <section class="flex-container carousel">
-                    <h2>Newest Arrivals</h2>
-                    <button id="shop-now-button">Shop Now</button>
-                </section>
-                <section id="most-popular">
-                    <h2>Most Popular</h2>
-                    <section class="bottom-flex-container most-popular-imgs">
-                        <section class="col-1-of-4">
-                            <a href="#">
-                            <img src="https://place-hold.it/200x200">
+                <h2>Contact Us</h2>
+                <p>If there are any questions or concerns about your order/in general, please fill out this form and we'll get back to you as soon as possible!</p>
+                <form>
+                    <section id="name-email-flex-container">
+                        <section class="col-1-of-2">
                             <h3>Name</h3>
-                            <h4>Price</h4>
-                            </a>
+                            <input id="name-input">
                         </section>
-                        <section class="col-1-of-4">
-                            <a href="#">
-                            <img src="https://place-hold.it/200x200">
-                            <h3>Name</h3>
-                            <h4>Price</h4>
-                            </a>
-                        </section>
-                        <section class="col-1-of-4">
-                            <a href="#">
-                            <img src="https://place-hold.it/200x200">
-                            <h3>Name</h3>
-                            <h4>Price</h4>
-                            </a>
-                        </section>
-                        <section class="col-1-of-4">
-                            <a href="#">
-                            <img src="https://place-hold.it/200x200">
-                            <h3>Name</h3>
-                            <h4>Price</h4>
-                            </a>
+                        <section class="col-1-of-2">
+                            <h3>Email</h3>
+                            <input id="email-input">
                         </section>
                     </section>
-                </section>
+                    <section id="last-half-form">
+                        <h3>Order Number</h3>
+                        <input id="order-number-input">
+                        <h3>Comments (tell us anything we need to know!)</h3>
+                        <textarea id="comments"></textarea>
+                    </section>
+                    <button id="btn-send">Send</button>
+                </form>
             </main>
             <footer>
                 <p>&copy; ClothingMania.com</p>
             </footer>
-            <script src="home-script.js"></script>
+            <script src="contact-us-script.js"></script>
         </div>
        
     </body>

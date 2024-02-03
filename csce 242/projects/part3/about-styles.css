@@ -2,7 +2,6 @@
     --bg-color: #FFFFFF;
     --content-bg-color: lightgray;
     --main-nav-link-color: #000000;
-    --link-hover-color: rgb(247, 247, 247);
 }
 
 body {
@@ -16,8 +15,7 @@ body {
 }
 
 .header-top-container,
-.header-bottom-container,
-#most-popular {
+.header-bottom-container {
     background: var(--content-bg-color);
     border-radius: 20px;
 }
@@ -32,34 +30,6 @@ body {
     padding: 20px 0px;
 }
 
-#most-popular {
-    padding: 20px 0px;
-}
-
-.col-1-of-4 {
-    text-align: center;
-    padding-top: 20px;
-    margin: 10px 20px;
-    padding-bottom: 10px;
-    /* border: 1px solid #000000; */
-}
-
-.col-1-of-4 img {
-    display: block;
-    margin: auto;
-}
-
-.carousel {
-    background-image: url(https://place-hold.it/1500x300);
-    background-size: 100vw 100vh;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px 0px;
-    margin: 30px 0px;
-}
-
 .flex-container {
     display: flex;
 }
@@ -72,7 +42,6 @@ footer p {
 .input-box {
     margin-bottom: 5px;
 }
-
 #login-button {
     margin-left: 5px;
 }
@@ -104,6 +73,11 @@ footer p {
     margin-top: 0px;
 }
 
+#our-story,
+#meet-the-team {
+    background-color: var(--content-bg-color);
+}
+
 /* Navigation */
 #main-nav li {
     list-style-type: none;
@@ -121,22 +95,47 @@ footer p {
     font-size: 30px;
 }
 
-.col-1-of-4 a {
-    text-decoration: none;
-    color: var(--main-nav-link-color);
+#our-story,
+#meet-the-team {
+    padding: 20px 0px;
+    margin: 30px 0px;
+    border-radius: 20px;
+}
+
+#our-story h2,
+#meet-the-team h2 {
+    text-align: center;
+}
+
+#our-story p {
+    padding: 0px 40px;
+}
+
+#meet-the-team p, h3 {
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
 .col-1-of-4 {
-    background-color: var(--link-hover-color);
-    border-radius: 10px;
+    margin-top: 20px;
 }
-/* .col-1-of-4 a:hover {
-    
-} */
 
-#most-popular h2 {
+.col-1-of-4 img {
+    display: block;
+    margin: auto;
+}
+
+.flex-container-pc-resolution {
+    padding-top: 20px;
+}
+
+
+.col-3-of-4 h3 {
     text-align: center;
 }
+
+
+/* Typography */
 
 /* Hamburger menu */
 #hamburger div {
@@ -160,7 +159,7 @@ footer p {
     display: none;
 }
 
-/* Typography */
+
 
 /* For larger resolutions */
 @media only screen and (min-width: 768px) {
@@ -170,7 +169,7 @@ footer p {
     }
 
     .columns,
-    .bottom-flex-container {
+    .flex-container-pc-resolution {
         display: flex;
     }
 
@@ -189,14 +188,30 @@ footer p {
         flex: 1;
     }
 
+    .col-1-of-4 img {
+        display: block;
+        padding-left: 40px;
+        margin: 0;
+    }
+
+    .col-3-of-4 {
+        flex: 3;
+    }
+
+    .col-3-of-4 h3 {
+        text-align: left;
+    }
+
+    #our-story h2,
+    #meet-the-team h2 {
+        padding-left: 40px;
+        text-align: left;
+    }
+
     .signin-form {
         justify-content: flex-start;
         padding-left: 80px;
-    }
-
-    #most-popular h2 {
-        text-align: left;
-        padding-left: 40px;
+        /* order: 1; */
     }
 
     .your-cart {
@@ -207,7 +222,17 @@ footer p {
 }
 
 @media only screen and (max-width: 1300px) {
-    .bottom-flex-container {
-        flex-direction: column;
+    .flex-container-pc-resolution {
+        display: block;
+    }
+
+    .col-1-of-4 img {
+        display: block;
+        margin: auto;
+        padding: 0;
+    }
+
+    .col-3-of-4 h3 {
+        text-align: center;
     }
 }

@@ -2,7 +2,6 @@
     --bg-color: #FFFFFF;
     --content-bg-color: lightgray;
     --main-nav-link-color: #000000;
-    --link-hover-color: rgb(247, 247, 247);
 }
 
 body {
@@ -16,8 +15,7 @@ body {
 }
 
 .header-top-container,
-.header-bottom-container,
-#most-popular {
+.header-bottom-container {
     background: var(--content-bg-color);
     border-radius: 20px;
 }
@@ -32,34 +30,6 @@ body {
     padding: 20px 0px;
 }
 
-#most-popular {
-    padding: 20px 0px;
-}
-
-.col-1-of-4 {
-    text-align: center;
-    padding-top: 20px;
-    margin: 10px 20px;
-    padding-bottom: 10px;
-    /* border: 1px solid #000000; */
-}
-
-.col-1-of-4 img {
-    display: block;
-    margin: auto;
-}
-
-.carousel {
-    background-image: url(https://place-hold.it/1500x300);
-    background-size: 100vw 100vh;
-    border-radius: 20px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px 0px;
-    margin: 30px 0px;
-}
-
 .flex-container {
     display: flex;
 }
@@ -72,7 +42,6 @@ footer p {
 .input-box {
     margin-bottom: 5px;
 }
-
 #login-button {
     margin-left: 5px;
 }
@@ -94,6 +63,16 @@ footer p {
     margin: auto;
 }
 
+main {
+    background-color: var(--content-bg-color);
+    border-radius: 20px;
+}
+/* 
+#name-email-flex-container,
+#last-half-form {
+    padding-left: 10%;
+} */
+
 .signin-form,
 .your-cart {
     justify-content: center;
@@ -102,6 +81,34 @@ footer p {
 
 .signin-form h3 {
     margin-top: 0px;
+}
+
+/* .col-1-of-2 {
+    text-align: center;
+}
+
+#last-half-form {
+    text-align: center;
+} */
+
+#btn-send {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 20px 0px;
+    margin: 30px 0px;
+    text-align: center;
+}
+
+main p {
+    padding: 0px 30px;
 }
 
 /* Navigation */
@@ -121,22 +128,7 @@ footer p {
     font-size: 30px;
 }
 
-.col-1-of-4 a {
-    text-decoration: none;
-    color: var(--main-nav-link-color);
-}
-
-.col-1-of-4 {
-    background-color: var(--link-hover-color);
-    border-radius: 10px;
-}
-/* .col-1-of-4 a:hover {
-    
-} */
-
-#most-popular h2 {
-    text-align: center;
-}
+/* Typography */
 
 /* Hamburger menu */
 #hamburger div {
@@ -160,18 +152,25 @@ footer p {
     display: none;
 }
 
-/* Typography */
-
 /* For larger resolutions */
 @media only screen and (min-width: 768px) {
 
+    main {
+        text-align: left;
+    }
     #hamburger {
         display: none;
     }
 
     .columns,
-    .bottom-flex-container {
+    #name-email-flex-container {
         display: flex;
+    }
+
+    #name-email-flex-container,
+    #last-half-form {
+        margin: auto;
+        width: 60%;
     }
 
     #content {
@@ -183,7 +182,7 @@ footer p {
     }
 
     .col-1-of-3,
-    .col-1-of-4,
+    .col-1-of-2,
     #main-nav li,
     #main-nav {
         flex: 1;
@@ -192,11 +191,7 @@ footer p {
     .signin-form {
         justify-content: flex-start;
         padding-left: 80px;
-    }
-
-    #most-popular h2 {
-        text-align: left;
-        padding-left: 40px;
+        /* order: 1; */
     }
 
     .your-cart {
@@ -204,10 +199,10 @@ footer p {
         padding-right: 110px;
     }
 
-}
-
-@media only screen and (max-width: 1300px) {
-    .bottom-flex-container {
-        flex-direction: column;
+    main h2,
+    main p {
+        text-align: left;
+        padding-left: 40px;
     }
+
 }
