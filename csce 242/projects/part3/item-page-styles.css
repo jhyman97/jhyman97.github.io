@@ -169,11 +169,12 @@ footer p {
     .col-1-of-3,
     .col-1-of-2,
     #main-nav li,
-    #main-nav {
+    #main-nav,
+    .main-col-1-of-3 {
         flex: 1;
     }
 
-    .col-1-of-3 {
+    .main-col-1-of-3 {
         margin-right: 20px;
     }
 
