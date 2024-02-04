@@ -24,6 +24,17 @@ body {
     margin-top: 20px;
 }
 
+#comments {
+    width: 300px;
+    height: 100px;
+}
+
+#name-input, 
+#email-input,
+#order-number-input {
+    width: 300px;
+}
+
 .signin-form,
 .main-logo,
 .your-cart {
@@ -83,21 +94,13 @@ main {
     margin-top: 0px;
 }
 
-/* .col-1-of-2 {
-    text-align: center;
-}
-
-#last-half-form {
-    text-align: center;
-} */
-
 #btn-send {
     display: block;
     margin: auto;
     margin-top: 20px;
 }
 
-input {
+#main-form input{
     margin-bottom: 20px;
 }
 

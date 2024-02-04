@@ -14,6 +14,13 @@ body {
     margin: 15px 0px;
 }
 
+.main-content {
+    background-color: var(--content-bg-color);
+    border-radius: 20px;
+    margin: 30px 0px;
+    padding: 20px 0px;
+}
+
 .header-top-container,
 .header-bottom-container {
     background: var(--content-bg-color);
@@ -73,6 +80,20 @@ footer p {
     margin-top: 0px;
 }
 
+.col-1-of-2 img {
+    display: block;
+    margin: auto;
+    padding: 0px 40px;
+}
+
+.item-info {
+    padding: 0px 40px;
+}
+
+.item-info h2, h3, p {
+    text-align: center;
+}
+
 /* Navigation */
 #main-nav li {
     list-style-type: none;
@@ -115,17 +136,24 @@ footer p {
 }
 
 /* For larger resolutions */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 800px) {
 
     #hamburger {
         display: none;
     }
 
     .columns,
-    .flex-image-title {
+    .main-columns,
+    .buttons-columns,
+    .flex-image-title,
+    .img-container,
+    .button-flex-container {
         display: flex;
     }
 
+    .button-flex-container {
+        align-items: flex-end;
+    }
     #content {
         width: 80%;
     }
@@ -134,10 +162,19 @@ footer p {
         justify-content: space-between;
     }
 
+    .item-info h2, h3, p {
+        text-align: left;
+    }
+
     .col-1-of-3,
+    .col-1-of-2,
     #main-nav li,
     #main-nav {
         flex: 1;
+    }
+
+    .col-1-of-3 {
+        margin-right: 20px;
     }
 
     .signin-form {
@@ -151,4 +188,27 @@ footer p {
         padding-right: 110px;
     }
 
+}
+
+@media only screen and (max-width: 1530px) {
+    .buttons-columns {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    .main-columns {
+        display: block;
+    }
+
+    .centered-btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item-info h2, h3, p {
+        text-align: center;
+    }
+ 
 }

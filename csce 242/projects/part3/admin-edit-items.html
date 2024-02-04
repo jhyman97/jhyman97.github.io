@@ -4,8 +4,8 @@
         <!--
             Author: Johnny Hyman
         -->
-        <title>Contact Us</title>
-        <link rel="stylesheet" href="contact-us-styles.css">
+        <title>Admin Edit Items</title>
+        <link rel="stylesheet" href="admin-edit-items-styles.css">
     </head>
 
     <body>
@@ -48,32 +48,42 @@
                 </div>
             </header>
             <main>
-                <h2>Contact Us</h2>
-                <p>If there are any questions or concerns about your order/in general, please fill out this form and we'll get back to you as soon as possible!</p>
-                <form id="main-form">
-                    <section id="name-email-flex-container">
-                        <section class="col-1-of-2">
-                            <h3>Name</h3>
-                            <input id="name-input">
+                <section class="columns-main">
+                    <section class="col-1-of-2">
+                        <h2>Add/Edit Item</h2>
+                        <h3>Item ID</h3>
+                        <input id="input-item-id" placeholder="Item ID">
+                        <h3>Item Image</h3>
+                        <button id="btn-item-image">Choose File</button>
+                        <section class="columns-main">
+                            <section class="col-1-of-2-inner">
+                                <h3>Item Name</h3>
+                                <input id="input-item-name" placeholder="Name">
+                            </section>
+                            <section class="col-1-of-2-inner">
+                                <h3>Item Price</h3>
+                                <input id="input-item-price" placeholder="Price">
+                            </section>
                         </section>
-                        <section class="col-1-of-2">
-                            <h3>Email</h3>
-                            <input id="email-input">
-                        </section>
+                        <h3>Item Sizes</h3>
+                        <button>[ checkbox here ]</button>
                     </section>
-                    <section id="last-half-form">
-                        <h3>Order Number</h3>
-                        <input id="order-number-input">
-                        <h3>Comments (tell us anything we need to know!)</h3>
-                        <textarea id="comments"></textarea>
+                    <section class="col-1-of-2">
+                        <h2>Delete Item</h2>
+                        <h3>Item ID</h3>
+                        <input id="input-item-id" placeholder="Item ID">
+                        <h3>Reason For Deletion</h3>
+                        <textarea id="text-area-reason"></textarea>
+                        <p>
+                        <button>Confirm Action</button>
+                        </p>
                     </section>
-                    <button id="btn-send">Send</button>
-                </form>
+                </section>
             </main>
             <footer>
                 <p>&copy; ClothingMania.com</p>
             </footer>
-            <script src="contact-us-script.js"></script>
+            <script src="admin-edit-items-script.js"></script>
         </div>
        
     </body>

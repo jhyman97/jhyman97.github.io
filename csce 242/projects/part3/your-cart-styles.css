@@ -73,6 +73,73 @@ footer p {
     margin-top: 0px;
 }
 
+.flex-image-title {
+    display: flex;
+}
+
+table {
+    width: 100%;
+    padding: 0px 40px;
+}
+
+#keep-shopping,
+#check-out {
+    padding: 30px 0px;
+}
+
+main {
+    background-color: var(--content-bg-color);
+    border-radius: 20px;
+    margin: 30px 0px;
+    padding: 20px 0px;
+}
+
+#special-instructions {
+    padding-left: 40px;
+}
+
+main h2 {
+    text-align: center;
+}
+
+td p {
+    margin: 0px;
+}
+
+td {
+    padding-top: 20px;
+    vertical-align: top;
+}
+
+th {
+    /* float: left; */
+    text-align: left;
+}
+#btns-total {
+    text-align: center;
+}
+.button-area {
+    text-align: center;
+}
+
+#text-area {
+    width: 400px;
+    height: 300px;
+}
+
+.table-image {
+    flex-basis: 30%;
+}
+
+.table-image {
+    flex: 1;
+}
+
+.table-name {
+    flex: 3;
+    padding-left: 20px;
+}
+
 /* Navigation */
 #main-nav li {
     list-style-type: none;
@@ -91,6 +158,7 @@ footer p {
 }
 
 /* Typography */
+
 
 /* Hamburger menu */
 #hamburger div {
@@ -122,7 +190,7 @@ footer p {
     }
 
     .columns,
-    .flex-image-title {
+    .bottom-columns {
         display: flex;
     }
 
@@ -134,10 +202,23 @@ footer p {
         justify-content: space-between;
     }
 
+    .table-name {
+        padding-left: 0px;
+    }
+
     .col-1-of-3,
     #main-nav li,
-    #main-nav {
+    #main-nav,
+    #special-instructions,
+    #btns-total,
+    #keep-shopping,
+    #check-out {
         flex: 1;
+    }
+
+    main h2 {
+        padding-left: 40px;
+        text-align: left;
     }
 
     .signin-form {
@@ -151,4 +232,21 @@ footer p {
         padding-right: 110px;
     }
 
+}
+
+@media only screen and (max-width: 1500px) {
+    .table-name {
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .bottom-columns {
+        display: block;
+    }
+
+    #special-instructions {
+        text-align: center;
+        padding-left: 0px;
+    }
 }
