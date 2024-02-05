@@ -25,13 +25,18 @@
                     </section>
                     <section class="col-1-of-3 first-two-col">
                         <h3>Slider Rotate</h3>
-                        <img src="./images/first-img.jpg">
+                        <img id="img-to-rotate" src="./images/first-img.jpg">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec imperdiet, nisl eu auctor sollicitudin, mi dui pretium leo, quis luctus odio tellus eget tellus. Etiam feugiat convallis tempus. Sed eu aliquam augue. Aenean rhoncus, nisl a rhoncus ultrices, metus libero auctor dui, luctus faucibus augue magna vel est. Curabitur efficitur bibendum pulvinar. Mauris eleifend lobortis mauris, a mollis lorem dictum et. Pellentesque malesuada sem magna, eu finibus lectus faucibus nec.
                         </p>
+                        <div id="slide-container">
+                            <input type="range" min="-360" max="360" value="0" id="slider">
+                        </div>
                     </section>
                     <section class="col-1-of-3 last-col">
                         <h3>Stars</h3>
+                        <div id="stars-playground" width="10px">
+                        </div>                       
                     </section>
                 </section>
             </main>
