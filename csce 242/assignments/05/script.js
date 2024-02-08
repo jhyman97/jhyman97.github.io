@@ -9,7 +9,7 @@ const rotateImage = () => {
 }
 
 const addStar = () => {
-    console.log('hi');
+    // console.log('hi');
     const playground = document.getElementById("stars-playground");
     const star = document.createElement("img");
     star.src = "./images/star.png";
