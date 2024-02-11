@@ -1,10 +1,16 @@
 :root {
-    --bg-color: #FFFFFF;
+    --body-bg-color: #19325C;
+    --bg-color: rgba(236, 236, 236, 0.2);
     --content-bg-color: lightgray;
+    --main-text-color: #ECECEC;
     --main-nav-link-color: #000000;
+    --link-hover-color: rgb(247, 247, 247);
+    --bg-hover-color: #A4F2Df;
+    --text-hover-color: #E33054;
 }
 
 body {
+    background-color: var(--body-bg-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -13,7 +19,11 @@ body {
     /* border: 3px solid #000000; */
     margin: 15px 0px;
 }
-
+/***/
+.main-logo img {
+    max-width: 300px;
+    /* max-height: 200px; */
+}
 .main-content {
     background-color: var(--content-bg-color);
     border-radius: 20px;
@@ -25,6 +35,13 @@ body {
 .header-bottom-container {
     background: var(--content-bg-color);
     border-radius: 20px;
+}
+
+.header-top-container,
+.header-bottom-container,
+.main-content {
+    background-color: var(--bg-color);
+    box-shadow: 0 0 10px;
 }
 
 .header-bottom-container {
@@ -41,9 +58,23 @@ body {
     display: flex;
 }
 
+/***/
+footer {
+    padding-top: 20px;
+}
+
 footer p {
     text-align: center;
-    padding-top: 20px;
+    /* padding-top: 20px; */
+    color: var(--main-text-color);
+}
+/***/
+footer a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    padding: 3px;
+    border-radius: 5px;
+    transition: background-color 0.25s ease-out;
 }
 
 .input-box {
@@ -54,7 +85,7 @@ footer p {
 }
 
 #content {
-    background: var(--bg-color);
+    /* background: var(--bg-color); */
     padding: 5px;
     margin: auto; /* center horizontally */
     border-radius: 5px;
@@ -80,6 +111,18 @@ footer p {
     margin-top: 0px;
 }
 
+.main-content h2,
+.main-content h3,
+.main-content p,
+form h3,
+::placeholder {
+    color: var(--main-text-color);
+}
+
+.img-container img {
+    max-width: 550px;
+    width: 80%;
+}
 .col-1-of-2 img {
     display: block;
     margin: auto;
@@ -92,6 +135,40 @@ footer p {
 
 .item-info h2, h3, p {
     text-align: center;
+}
+
+#your-cart-button,
+#login-button,
+#btn-dropdown,
+#btn-add-to-cart,
+input {
+    background-color: transparent;
+    color: var(--main-text-color);
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: 1px solid var(--main-text-color);
+    transition: background-color 0.25s ease-out;
+}
+
+#your-cart-button,
+#login-button,
+#btn-dropdown,
+#btn-add-to-cart {
+    background-color: var(--main-text-color);
+    color: var(--body-bg-color);
+    transition: background-color 0.25s ease-out;
+}
+
+/**/
+#your-cart-button:hover,
+#login-button:hover,
+#btn-dropdown:hover,
+#btn-add-to-cart:hover,
+input:focus {
+    background-color: var(--bg-hover-color);
+    border: 1px solid var(--body-bg-color);
+    color: var(--body-bg-color);
+    cursor: pointer;
 }
 
 /* Navigation */
@@ -111,24 +188,60 @@ footer p {
     font-size: 30px;
 }
 
+/**/
+#main-nav a {
+    color: var(--main-text-color);
+}
+
+/**/
+#main-nav a {
+    padding: 20px 40px;
+    border-radius: 20px;
+    display: block;
+    transition: background-color 0.25s ease-out;
+}
+
+/**/
+#main-nav a:hover,
+footer a:hover {
+    background-color: var(--bg-hover-color);
+    color: var(--body-bg-color);
+    cursor: pointer;
+}
+
 /* Typography */
 
 /* Hamburger menu */
+/**/
 #hamburger div {
     width: 25px;
     height: 3px;
-    background-color: var(--main-nav-link-color);
+    background-color: var(--main-text-color);
     margin: 6px 0;
     padding-left: 5px;
+    transition: background-color 0.25s ease-out;
 }
 
+/**/
 #hamburger {
     margin: auto;
-    background-color: var(--content-bg-color);
+    background-color: var(--bg-color);
     border-radius: 20px;
     width: 30px;
     /* margin: 30px; */
     padding: 10px 30px;
+    box-shadow: 0 0 10px;
+    transition: background-color 0.25s ease-out;   
+}
+
+/**/
+#hamburger:hover {
+    background-color: var(--bg-hover-color);
+}
+
+/**/
+#hamburger:hover div {
+    background-color: var(--body-bg-color);
 }
 
 .hide {

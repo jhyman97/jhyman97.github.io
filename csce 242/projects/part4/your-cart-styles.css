@@ -46,11 +46,23 @@ body {
     display: flex;
 }
 
-/**/
+/***/
+footer {
+    padding-top: 20px;
+}
+
 footer p {
     text-align: center;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     color: var(--main-text-color);
+}
+/***/
+footer a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    padding: 3px;
+    border-radius: 5px;
+    transition: background-color 0.25s ease-out;
 }
 
 .input-box {
@@ -71,6 +83,10 @@ footer p {
     display: block;
     margin: auto;
 }
+/***/
+.main-logo img {
+    max-width: 300px;
+}
 
 .main-logo a {
     display: block; 
@@ -85,6 +101,10 @@ footer p {
 
 .signin-form h3 {
     margin-top: 0px;
+}
+
+.table-image img {
+    max-width: 150px;
 }
 
 /**/
@@ -236,7 +256,8 @@ th {
 }
 
 /**/
-#main-nav a:hover {
+#main-nav a:hover,
+footer a:hover {
     background-color: var(--bg-hover-color);
     color: var(--body-bg-color);
     cursor: pointer;
