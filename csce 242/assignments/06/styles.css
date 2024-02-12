@@ -1,0 +1,163 @@
+:root {
+    --background-color: #002858;
+    --section-bg-color: #054674;
+    --main-text-color: #12CAB5;
+    --secondary-text-color: #F0028D;
+    --link-color: #FFFFFF;
+    --visited-link-color: #F2D852;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background-color);
+}
+
+/* Structure */
+
+#content {
+    padding: 5px;
+    margin: auto; 
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header,
+footer {
+    text-align: center;
+}
+
+#main-nav ul, 
+#enter-command-list {
+    padding-left: 0px;
+}
+
+img {
+    max-width: 30%;
+}
+
+#nav-items li {
+    list-style-type: none;
+}
+
+#enter-command, 
+#yoga-slide {
+    background: var(--section-bg-color);
+}
+
+.flex-container {
+    width: 300px;
+}
+
+.flex-item {
+    border: 1px solid var(--main-text-color);
+}
+
+#img-exercise-1 {
+    display: block;
+    margin: auto;
+}
+
+#img-enter-command,
+#img-yoga-slide {
+    display: block;
+    margin: auto;
+}
+
+#img-yoga-slide {
+    margin-bottom: 10px;
+}
+
+.flex-item {
+    text-align: center;
+}
+
+.flex-item ul {
+    text-align: left;
+    display: inline-block;
+}
+
+
+/* Slider */
+#slider-container {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+#slider {
+    appearance: none;
+    width: 95%;
+    height: 25px;
+    background: var(--background-color);
+    outline: none;
+}
+
+#slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: var(--secondary-text-color);
+    cursor: pointer;
+}
+
+button {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.hide {
+    display: none;
+}
+
+/* Typography */
+
+h1, 
+h3, 
+button,
+li,
+p {
+    color: var(--main-text-color);
+}
+
+h2 {
+    color: var(--secondary-text-color);
+}
+
+a {
+    color: var(--link-color);
+}
+
+a:visited {
+    color: var(--visited-link-color);
+}
+
+@media only screen and (min-width: 768px) {
+    .flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #main-nav li {
+        display: inline-block;
+    }
+
+    #main-nav li:not(:last-child)::after {
+        content: " | ";
+    }
+
+    #drop-down {
+        display: none;
+    }
+}
+
+.section-hide {
+    display: none;
+}
