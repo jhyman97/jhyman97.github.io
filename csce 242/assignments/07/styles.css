@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightgray;
+}
+
+/* Structure */
+
+#content {
+    background: #fff;
+    padding: 5px;
+    /* width: 80%; */
+    margin: auto; /* center horizontally */
+    border-radius: 5px;
+}
+
+.flex-container {
+    border: 1px solid black;
+}
+
+#main-nav,
+#bounce-ball {
+    border: 1px dashed black;
+}
+
+#img-ball {
+    width: 70px;
+    position: relative;
+    top: 0px;
+}
+#ball-container {
+    width: 120px;
+    height: 350px;
+    border: 1px solid red;
+    margin: auto;
+}
+
+#bounce-ball {
+    text-align: center;
+}
+
+.flex-container-always {
+    display: flex;
+}
+
+.col-1-of-2 {
+    flex: 1;
+}
+
+#imgs-yoga img {
+    max-width: 90%;
+}
+
+/* Typography */
+
+header {
+    text-align: center;
+}
+
+h1 {
+    color: darkslategray;
+}
+
+@media only screen and (min-width: 768px) {
+    .flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .flex-container {
+        height: 500px;
+    }
+
+    #content {
+        width: 40%;
+    }
+}
