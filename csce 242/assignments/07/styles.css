@@ -1,25 +1,57 @@
+:root {
+    --background-color: #32323B;
+    --container-color: #8A8896;
+    --inner-container-color: #FFFFFF;
+    --main-text-color: #ECEFFF;
+    --secondary-text-color: #D1CED6;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: lightgray;
+    background: var(--background-color);
 }
 
 /* Structure */
 
 #content {
-    background: #fff;
     padding: 5px;
-    /* width: 80%; */
     margin: auto; /* center horizontally */
-    border-radius: 5px;
 }
 
-.flex-container {
-    border: 1px solid black;
+.flex-container,
+.desc {
+    display: flex;
+    
 }
 
-#main-nav,
-#bounce-ball {
-    border: 1px dashed black;
+.bounce-ball-flex {
+    justify-content: center;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.desc {
+    justify-content: center;
+    align-items: center;
+}
+
+.col-1-of-2 {
+    flex: 1;
+}
+
+
+#bounce-ball,
+#yoga-fun {
+    border: var(--main-text-color);
+    background-color: var(--container-color);
+}
+
+#yoga-fun {
+    padding: 20px 0px;
+}
+
+#yoga-fun h3 {
+    padding-bottom: 20px;
 }
 
 #img-ball {
@@ -30,45 +62,90 @@ body {
 #ball-container {
     width: 120px;
     height: 350px;
-    border: 1px solid red;
+    background-color: var(--inner-container-color);
+    border: 1px solid var(--main-text-color);
     margin: auto;
 }
+
 
 #bounce-ball {
     text-align: center;
 }
-
-.flex-container-always {
-    display: flex;
-}
-
 .col-1-of-2 {
     flex: 1;
 }
 
-#imgs-yoga img {
-    max-width: 90%;
+.imgs-yoga img {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+}
+
+.hide {
+    display: none;
+}
+
+/* Navigation */
+
+button {
+    background: transparent;
+    border: transparent;
+}
+
+#main-nav ul {
+    padding-left: 0px;
+}
+
+#main-nav li {
+    list-style-type: none;
 }
 
 /* Typography */
 
-header {
+header,
+#yoga-fun h3 {
     text-align: center;
 }
 
-h1 {
-    color: darkslategray;
+button {
+    font-size: 15px;
 }
 
-@media only screen and (min-width: 768px) {
-    .flex-container {
-        display: flex;
-        justify-content: center;
-        align-items: stretch;
+#btn-ball {
+    text-decoration: underline;
+}
+
+h1,
+button,
+h3,
+p,
+a:visited {
+    color: var(--main-text-color);
+}
+
+h2 {
+    color: var(--secondary-text-color);
+}
+
+a {
+    color: var(--background-color);
+}
+
+
+
+@media only screen and (min-width: 900px) {
+    
+    #main-nav li {
+        display: inline-block;
     }
 
-    .flex-container {
-        height: 500px;
+    #main-nav li:not(:last-child)::after {
+        content: " | ";
+        color: var(--main-text-color);
+    }
+
+    #drop-down {
+        display: none;
     }
 
     #content {
