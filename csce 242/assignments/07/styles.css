@@ -46,7 +46,8 @@ body {
     background-color: var(--container-color);
 }
 
-#yoga-fun {
+#yoga-fun,
+footer {
     padding: 20px 0px;
 }
 
@@ -59,6 +60,7 @@ body {
     position: relative;
     top: 0px;
 }
+
 #ball-container {
     width: 120px;
     height: 350px;
@@ -103,7 +105,8 @@ button {
 /* Typography */
 
 header,
-#yoga-fun h3 {
+#yoga-fun h3,
+footer {
     text-align: center;
 }
 
