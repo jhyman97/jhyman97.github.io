@@ -15,15 +15,29 @@
 
 // }, 500);
 
+// const interval = setInterval(() => {
+
+//     const currentSection = document.querySelector(".items section.highlighted");
+//     let nextSection = currentSection.nextElementSibling;
+
+//     if (nextSection == null) {
+//         nextSection = document.querySelector(".items section");
+//     }
+
+//     currentSection.classList.remove("highlighted");
+//     nextSection.classList.add("highlighted");
+
+// }, 500);
+
 const interval = setInterval(() => {
-    const currentSection = document.querySelector('.items section .highlighted');
+    const currentSection = document.querySelector('.items section.highlighted');
     let nextSection = currentSection.nextElementSibling;
 
-    if(nextSection === null) {
+    if(nextSection == null) {
         nextSection = document.querySelector('.items section');
     }
 
-    currentSection.classList.remove('higlighted');
+    currentSection.classList.remove('highlighted');
     nextSection.classList.add('highlighted');
 }, 500);
 

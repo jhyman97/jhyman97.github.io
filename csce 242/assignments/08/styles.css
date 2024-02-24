@@ -1,0 +1,71 @@
+:root {
+    --background-color: #00008F;
+    --content-bg-color: #8F1B44;
+    --main-text-color: #0FDB98;
+    --secondary-text-color: #388F72;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background-color);
+}
+
+/* Structure */
+
+#content {
+    margin: auto; 
+}
+
+#images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#advertisement {
+    padding: 10px 10px;
+}
+
+#advertisement,
+#images {
+    border: 1px solid var(--main-text-color);
+    background: var(--content-bg-color);
+}
+
+#images img {
+    max-width: 90%;
+    padding: 10px 0px;
+}
+
+footer {
+    margin: 30px 0px;
+}
+
+
+/* Typography */
+
+h1,
+p,
+a {
+    color: var(--main-text-color);
+}
+
+h2 {
+    color: var(--secondary-text-color);
+}
+
+header,
+footer,
+#advertisement {
+    text-align: center;
+}
+
+/* For larger resolutions */
+
+@media only screen and (min-width: 768px) {
+    #content {
+        width: 60%;
+    }
+}
