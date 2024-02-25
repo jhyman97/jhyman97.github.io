@@ -9,9 +9,20 @@
     --text-hover-color: #E33054;
 }
 
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Regular.ttf') format('truetype');
+}
+
 body {
     background-color: var(--body-bg-color);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Lato;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
 }
 
 /* Structure */
@@ -208,6 +219,16 @@ footer a:hover {
     cursor: pointer;
 }
 
+#item-sizes {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+#item-sizes li {
+    color: var(--main-text-color);
+    margin: 5px 0px;
+}
+
 /* Typography */
 
 /* Hamburger menu */
@@ -246,9 +267,16 @@ footer a:hover {
     display: none;
 }
 
+.hide-small {
+    display: none;
+}
+
 /* For larger resolutions */
 @media only screen and (min-width: 768px) {
-
+    .hide-small {
+        display: block;
+    }
+    
     #hamburger {
         display: none;
     }
@@ -296,7 +324,34 @@ footer a:hover {
     .columns-main {
         display: block;
     }
+    .col-1-of-2 {
+        padding-left: 0px;
+    }
     main {
         text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1005px) {
+    #main-nav-list,
+    .header-top-container {
+        flex-direction: column;
+    }
+
+    .header-top-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signin-form {
+        padding-left: 0px;
+    }
+    .your-cart {
+        padding-right: 0px;
+    }
+}
+@media only screen and (max-width: 1327px) {
+    #login-button {
+        margin-top: 5px;
     }
 }

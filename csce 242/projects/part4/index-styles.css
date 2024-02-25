@@ -1,7 +1,4 @@
-@font-face {
-    font-family: 'Lato';
-    src: url('Lato-Regular.ttf') format('truetype');
-}
+
 
 :root {
     --body-bg-color: #19325C;
@@ -14,9 +11,20 @@
     --text-hover-color: #E33054;
 }
 
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Regular.ttf') format('truetype');
+}
+
 body {
     background-color: var(--body-bg-color);
     font-family: Lato;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
 }
 
 /* Structure */
@@ -320,9 +328,16 @@ form h3,
 .hide {
     display: none;
 }
-
+/**/
+.hide-small {
+    display: none;
+}
 /* For larger resolutions */
 @media only screen and (min-width: 768px) {
+    /**/
+    .hide-small {
+        display: block;
+    }
 
     #hamburger {
         display: none;
@@ -380,13 +395,34 @@ form h3,
 }
 
 
-
-
-
 @media only screen and (max-width: 1300px) {
     .bottom-flex-container,
     #bottom-nav-list {
         flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1005px) {
+    #main-nav-list,
+    .header-top-container {
+        flex-direction: column;
+    }
+
+    .header-top-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signin-form {
+        padding-left: 0px;
+    }
+    .your-cart {
+        padding-right: 0px;
+    }
+}
+@media only screen and (max-width: 1327px) {
+    #login-button {
+        margin-top: 5px;
     }
 }
 

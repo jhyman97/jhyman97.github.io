@@ -9,9 +9,20 @@
     --text-hover-color: #E33054;
 }
 
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Regular.ttf') format('truetype');
+}
+
 body {
     background-color: var(--body-bg-color);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Lato;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
 }
 
 /* Structure */
@@ -209,6 +220,15 @@ footer a:hover {
     cursor: pointer;
 }
 
+#select-size {
+    background-color: var(--main-text-color);
+    color: var(--body-bg-color);
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: 1px solid var(--main-text-color);
+}
+
+
 /* Typography */
 
 /* Hamburger menu */
@@ -248,9 +268,17 @@ footer a:hover {
     display: none;
 }
 
+.hide-small {
+    display: none;
+}
+
 /* For larger resolutions */
 @media only screen and (min-width: 800px) {
 
+    .hide-small {
+        display: block;
+    }
+    
     #hamburger {
         display: none;
     }
@@ -308,6 +336,10 @@ footer a:hover {
     .buttons-columns {
         flex-direction: column;
     }
+
+    #btn-add-to-cart {
+        margin-top: 20px;
+    }
 }
 
 @media only screen and (max-width: 1380px) {
@@ -325,4 +357,28 @@ footer a:hover {
         text-align: center;
     }
  
+}
+
+@media only screen and (max-width: 1005px) {
+    #main-nav-list,
+    .header-top-container {
+        flex-direction: column;
+    }
+
+    .header-top-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signin-form {
+        padding-left: 0px;
+    }
+    .your-cart {
+        padding-right: 0px;
+    }
+}
+@media only screen and (max-width: 1327px) {
+    #login-button {
+        margin-top: 5px;
+    }
 }
