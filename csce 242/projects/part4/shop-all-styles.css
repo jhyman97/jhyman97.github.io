@@ -9,20 +9,9 @@
     --text-hover-color: #E33054;
 }
 
-@font-face {
-    font-family: 'Lato';
-    src: url('Lato-Regular.ttf') format('truetype');
-}
-
 body {
     background-color: var(--body-bg-color);
-    font-family: Lato;
-}
-
-button,
-input,
-textarea {
-    font-family: inherit;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Structure */
@@ -262,38 +251,6 @@ footer a:hover {
     cursor: pointer;
 }
 
-#nav-sort-by {
-    text-decoration: none;
-    /* text-align: left; */
-    padding: 0px 40px;
-}
-
-#nav-sort-by li {
-    list-style-type: none;
-}
-
-#nav-sort-by ul {
-    padding-left: 0px;
-}
-
-#nav-sort-by button {
-    background-color: transparent;
-    border-radius: 5px;
-    margin: 5px 0px;
-    color: var(--main-text-color);
-    border-color: transparent;
-    font-size: 18px;
-    width: 100%;
-    text-align: center;
-    transition: background-color 0.25s ease-out;
-}
-
-#nav-sort-by button:hover {
-    background-color: var(--bg-hover-color);
-    color: var(--body-bg-color);
-    cursor: pointer;
-}
-
 /* Typography */
 
 /* Hamburger menu */
@@ -329,19 +286,8 @@ footer a:hover {
     display: none;
 }
 
-.hide-small {
-    display: none;
-}
-
-.hide-list {
-    display: none;
-}
-
 /* For larger resolutions */
 @media only screen and (min-width: 768px) {
-    .hide-small {
-        display: block;
-    }
 
     #hamburger {
         display: none;
@@ -351,14 +297,6 @@ footer a:hover {
     .flex-image-title,
     .main-columns {
         display: flex;
-    }
-
-    #nav-sort-by button {
-        text-align: left;
-        /* padding-left: 40px; */
-    }
-    #nav-sort-by ul {
-        padding-left: 40px;
     }
 
     /* .main-columns {
@@ -414,29 +352,5 @@ footer a:hover {
 @media only screen and (max-width: 1300px) {
     .main-columns {
         display: block;
-    }
-}
-
-@media only screen and (max-width: 1005px) {
-    #main-nav-list,
-    .header-top-container {
-        flex-direction: column;
-    }
-
-    .header-top-container {
-        justify-content: center;
-        align-items: center;
-    }
-
-    .signin-form {
-        padding-left: 0px;
-    }
-    .your-cart {
-        padding-right: 0px;
-    }
-}
-@media only screen and (max-width: 1327px) {
-    #login-button {
-        margin-top: 5px;
     }
 }

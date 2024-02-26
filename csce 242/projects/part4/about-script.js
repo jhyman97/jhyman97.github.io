@@ -1,8 +1,5 @@
-// const toggleHamburger = () => {
-//     document.getElementById("main-nav-list").classList.toggle("hide");
-// };
 const toggleHamburger = () => {
-    document.getElementById("main-nav-list").classList.toggle("hide-small");
+    document.getElementById("main-nav-list").classList.toggle("hide");
 };
 
 const goToAdminPage = () => {
