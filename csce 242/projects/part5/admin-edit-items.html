@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            Author: Johnny Hyman
+        -->
+        <title>Admin Edit Items</title>
+        <link rel="stylesheet" href="admin-edit-items-styles.css">
+    </head>
+
+    <body>
+        <div id="content">
+            <header>
+                <div class="columns header-top-container">
+                    <section class="col-1-of-3 flex-container signin-form">
+                        <form>
+                            <h3>Sign in</h3>
+                            <div class="input-box">
+                                <input id="username-input" type="username" placeholder="Username">
+                            </div>
+                            <div class="input-box">
+                                <input id="password-input" type="password" placeholder="Password">
+                                <a href="admin-edit-items.html"><button type="button" id="login-button">Login</button></a>
+                            </div>
+                        </form>
+                    </section>
+                    <section class="col-1-of-3 flex-container main-logo">
+                        <a href="index.html"><img src="./logo-image/logo.png" alt="ClothingMania logo"></a>
+                    </section>
+                    <section class="col-1-of-3 flex-container your-cart">
+                        <a href="your-cart.html"><button id="your-cart-button">Your Cart</button></a>
+                    </section>
+                </div>
+                <div id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="columns header-bottom-container">
+                    <nav id="main-nav">
+                        <ul id="main-nav-list" class="columns hide-small">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop-all.html">Shop All</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <section class="columns-main">
+                    <section class="col-1-of-2">
+                        <h2>Add/Edit Item</h2>
+                        <h3>Item ID</h3>
+                        <input id="input-item-id" placeholder="Item ID">
+                        <h3>Item Image</h3>
+                        <button id="btn-item-image">Choose File</button>
+                        <section class="columns-main">
+                            <section class="col-1-of-2-inner">
+                                <h3>Item Name</h3>
+                                <input id="input-item-name" placeholder="Name">
+                            </section>
+                            <section class="col-1-of-2-inner">
+                                <h3>Item Price</h3>
+                                <input id="input-item-price" placeholder="Price">
+                            </section>
+                        </section>
+                        <h3>Item Sizes</h3>
+                        <ul id="item-sizes">
+                            <li>
+                                <input type="checkbox" id="cb-small">
+                                <label for="cb-small">Small</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cb-medium">
+                                <label for="cb-medium">Medium</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cb-large">
+                                <label for="cb-large">Large</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cb-extra-large">
+                                <label for="cb-extra-large">Extra Large</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="cb-2xl">
+                                <label for="cb-2xl">2XL</label>
+                            </li>
+                        </ul>
+                        
+                    </section>
+                    <section class="col-1-of-2">
+                        <h2>Delete Item</h2>
+                        <h3>Item ID</h3>
+                        <input id="input-item-id" placeholder="Item ID">
+                        <h3>Reason For Deletion</h3>
+                        <textarea id="text-area-reason"></textarea>
+                        <p>
+                        <button id="btn-confirm-action">Confirm Action</button>
+                        </p>
+                    </section>
+                </section>
+            </main>
+            <footer>
+                <p>&copy; ClothingMania.com</p>
+                <p>Logo by <a href="https://www.adobe.com/express/create/logo">Adobe Express</a></p>
+                <p>Pictures by <a href="https://unsplash.com">Unsplash</a></p>
+            </footer>
+            <script src="admin-edit-items-script.js"></script>
+        </div>
+       
+    </body>
+</html>
