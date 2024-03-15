@@ -95,7 +95,8 @@ footer a {
     margin: auto;
 }
 
-.item-preview img {
+.item-preview img,
+.item-containers img {
     max-width: 200px;
 }
 
@@ -197,10 +198,10 @@ input:focus {
     margin: auto;
 }
 
-.item-preview {
+.item-containers {
     text-align: center;
     padding-top: 20px;
-    margin: 10px 20px;
+    /* margin: 5px; */
     padding-bottom: 10px;
     border-radius: 20px;
 }
@@ -215,26 +216,36 @@ input:focus {
     padding-left: 0px;
 }
 
-.item-preview a {
+/* .item-preview a { */
+    /* display: block; */
+    /* text-decoration: none; */
+    /* height: 100%; */
+    /* width: 100%; */
+    /* margin: 10px 20px; */
+    /* padding-top: 20px; */
+    /* padding-bottom: 10px; */
+    /* border-radius: 20px; */
+    /* transition: background-color 0.25s ease-out; */
+    /* color: var(--main-nav-link-color); */
+/* } */
+
+.item-containers a {
     display: block;
     text-decoration: none;
     height: 100%;
     width: 100%;
-    /* margin: 10px 20px; */
     padding-top: 20px;
-    /* padding-bottom: 10px; */
     border-radius: 20px;
     transition: background-color 0.25s ease-out;
-    /* color: var(--main-nav-link-color); */
 }
 
-.item-preview a:hover {
+.item-containers a:hover {
     background-color: var(--bg-hover-color);
     color: var(--body-bg-color);
 }
 
-.item-preview a:hover h3, 
-.item-preview a:hover h4{
+.item-containers a:hover h3, 
+.item-containers a:hover h4{
     color: var(--body-bg-color);
 }
 
@@ -351,6 +362,18 @@ footer a:hover {
     .flex-image-title,
     .main-columns {
         display: flex;
+    }
+
+    #main-content section {
+        flex: 28%;
+        padding: 0px 20px;
+        /* margin: 25px 0px; */
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+
+    #main-content {
+        flex-wrap: wrap;
     }
 
     #nav-sort-by button {

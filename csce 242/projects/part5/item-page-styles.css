@@ -126,11 +126,12 @@ footer a {
 .main-content h3,
 .main-content p,
 form h3,
+form label,
 ::placeholder {
     color: var(--main-text-color);
 }
 
-.img-container img {
+#img-container img {
     max-width: 550px;
     width: 80%;
 }
@@ -140,11 +141,11 @@ form h3,
     padding: 0px 40px;
 }
 
-.item-info {
+#item-info {
     padding: 0px 40px;
 }
 
-.item-info h2, h3, p {
+#item-info h2, h3, p, label {
     text-align: center;
 }
 
@@ -230,6 +231,12 @@ footer a:hover {
 
 
 /* Typography */
+form label {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0px;
+}
 
 /* Hamburger menu */
 /**/
@@ -287,7 +294,7 @@ footer a:hover {
     .main-columns,
     .buttons-columns,
     .flex-image-title,
-    .img-container,
+    #img-container,
     .button-flex-container {
         display: flex;
     }
@@ -303,7 +310,7 @@ footer a:hover {
         justify-content: space-between;
     }
 
-    .item-info h2, h3, p {
+    #item-info h2, h3, p, label {
         text-align: left;
     }
 
@@ -353,7 +360,7 @@ footer a:hover {
         align-items: center;
     }
 
-    .item-info h2, h3, p {
+    #item-info h2, h3, p, label {
         text-align: center;
     }
  

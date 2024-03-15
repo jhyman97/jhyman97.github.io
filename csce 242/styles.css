@@ -94,8 +94,15 @@ h1, h2 {
     margin-top: 0px;
 }
 
-#about-section {
+#about-section,
+.server-assignment h3,
+.server-assignment p {
     color: #F2F2F2;
+}
+
+.server-assignment a {
+    text-decoration: underline;
+    display: inline;
 }
 
 /* For larger resolutions */
