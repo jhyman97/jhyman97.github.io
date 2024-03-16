@@ -4,6 +4,7 @@
         "name": "White T-Shirt",
         "type": "shirt",
         "image_name": "white-t-shirt.jpg",
+        "alt_text": "A white t-shirt",
         "price": 15.00,
         "sizes": [
             "Small",
@@ -41,6 +42,7 @@
         "name": "Black T-Shirt",
         "type": "shirt",
         "image_name": "black-t-shirt.jpg",
+        "alt_text": "A black t-shirt",
         "price": 15.00,
         "sizes": [
             "Small",
@@ -73,6 +75,7 @@
         "name": "Navy T-Shirt",
         "type": "shirt",
         "image_name": "navy-t-shirt.jpg",
+        "alt_text": "A navy t-shirt",
         "price": 15.00,
         "sizes": [
             "Small",
@@ -100,6 +103,7 @@
         "name": "Dark Blue Jeans",
         "type": "pants",
         "image_name": "dark-jeans.jpg",
+        "alt_text": "A pair of dark blue jeans",
         "price": 20.00,
         "sizes": [
             "Small",
@@ -132,6 +136,7 @@
         "name": "Light Blue Jeans",
         "type": "pants",
         "image_name": "light-jeans.jpg",
+        "alt_text": "A pair of light blue jeans",
         "price": 20.00,
         "sizes": [
             "Small",
@@ -159,6 +164,7 @@
         "name": "Navy Shorts",
         "type": "pants",
         "image_name": "navy-shorts.jpg",
+        "alt_text": "A pair of navy blue shorts",
         "price": 25.00,
         "sizes": [
             "Small",
@@ -191,6 +197,7 @@
         "name": "Black Jacket",
         "type": "jacket",
         "image_name": "black-jacket.jpg",
+        "alt_text": "A black jacket",
         "price": 30.00,
         "sizes": [
             "Small",
@@ -223,6 +230,7 @@
         "name": "Blue Jacket",
         "type": "jacket",
         "image_name": "blue-jacket.jpg",
+        "alt_text": "A blue jacket",
         "price": 30.00,
         "sizes": [
             "Small",
@@ -260,6 +268,7 @@
         "name": "Green Sweatshirt",
         "type": "jacket",
         "image_name": "green-sweatshirt.jpg",
+        "alt_text": "A green sweatshirt",
         "price": 35.00,
         "sizes": [
             "Small",

@@ -1,7 +1,3 @@
-// const toggleHamburger = () => {
-//     document.getElementById("main-nav-list").classList.toggle("hide");
-// };
-
 const getItemInfo = async() => {
     try {
         return await fetch('items.json').then((response) => response.json());    
@@ -18,6 +14,7 @@ const showItemInfo = async() => {
 
     const img = document.createElement('img');
     img.src = './item-images/' + item.image_name;
+    img.alt = item.alt_text;
     itemImgSection.append(img);
 
     // item title

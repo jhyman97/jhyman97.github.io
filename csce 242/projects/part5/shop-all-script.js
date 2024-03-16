@@ -33,6 +33,7 @@ const showItems = async() => {
        // item img
        const img = document.createElement('img');
        img.src = './item-images/' + item.image_name;
+       img.alt = item.alt_text;
        itemInfoSection.append(img);
 
        // item title
