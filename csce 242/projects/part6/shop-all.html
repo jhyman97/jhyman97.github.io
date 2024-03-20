@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            Author: Johnny Hyman
+        -->
+        <title>Shop All</title>
+        <link rel="stylesheet" href="shop-all-styles.css">
+    </head>
+
+    <body>
+        <div id="content">
+            <header>
+                <div class="columns header-top-container">
+                    <section class="col-1-of-3 flex-container signin-form">
+                        <form action="./admin-edit-items.html">
+                            <h3>Sign in</h3>
+                            <div class="input-box">
+                                <input id="username-input" type="username" placeholder="Username" required>
+                            </div>
+                            <div class="input-box">
+                                <input id="password-input" type="password" placeholder="Password" required>
+                                <button type="submit" id="login-button">Login</button>
+                            </div>
+                        </form>
+                    </section>
+                    <section class="col-1-of-3 flex-container main-logo">
+                        <a href="index.html"><img src="./logo-image/logo.png" alt="ClothingMania logo"></a>
+                    </section>
+                    <section class="col-1-of-3 flex-container your-cart">
+                        <a href="your-cart.html"><button id="your-cart-button">Your Cart</button></a>
+                    </section>
+                </div>
+                <div id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="columns header-bottom-container">
+                    <nav id="main-nav">
+                        <ul id="main-nav-list" class="columns hide-small">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop-all.html">Shop All</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <section class="columns">
+                    <section class="col-1-of-4">
+                        <h2>Sort By</h2>
+                        <nav id="nav-sort-by">
+                            <div id="sort-by-clothing-label">
+                                <button>Clothing</button>
+                            </div>
+                            <ul id="sorts-clothing" class="hide-list">
+                                <li><button>Shirts</button></li>
+                                <li><button>Pants</button></li>
+                                <li><button>Jacket</button></li>
+                            </ul>
+                            <div id="sort-by-price-label">
+                                <button>Price</button>
+                            </div>
+                            <ul id="sorts-price" class="hide-list">
+                                <li><button>Low to High</button></li>
+                                <li><button>High to Low</button></li>
+                            </ul>
+                            <div id="sort-by-alphabet-label">
+                                <button>Alphabet</button>
+                            </div>
+                            <ul id="sorts-alphabet" class="hide-list">
+                                <li><button>A-Z</button></li>
+                                <li><button>Z-A</button></li>
+                            </ul>
+                        </nav>
+                    </section>
+                    <section class="col-3-of-4">
+                        <h2>Products</h2>
+                        <section id="main-content" class="columns"></section>
+                    </section>
+                </section>
+            </main>
+            <footer>
+                <p>&copy; ClothingMania.com</p>
+                <p>Logo by <a href="https://www.adobe.com/express/create/logo">Adobe Express</a></p>
+                <p>Pictures by <a href="https://unsplash.com">Unsplash</a></p>
+            </footer>
+            <script src="shop-all-script.js"></script>
+        </div>
+       
+    </body>
+</html>

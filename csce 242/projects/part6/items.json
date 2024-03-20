@@ -1,0 +1,304 @@
+[
+    {
+        "_id": 1,
+        "name": "White T-Shirt",
+        "type": "shirt",
+        "image_name": "white-t-shirt.jpg",
+        "alt_text": "A white t-shirt",
+        "price": 15.00,
+        "sizes": [
+            "Small",
+            "Medium",
+            "Large",
+            "Extra Large",
+            "2XL"
+        ],
+        "width_length_pairs": [
+            {
+                "width": 20,
+                "length": 28.5
+            },
+            {
+                "width": 21,
+                "length": 29
+            },
+            {
+                "width": 22,
+                "length": 29.5
+            },
+            {
+                "width": 23,
+                "length": 29.5
+            },
+            {
+                "width": 23.5,
+                "length": 30
+            }
+        ], 
+        "description": "Comfortable, durable and simple white T-shirt! Made of 100% cotton with unisex fit."
+    },
+    {
+        "_id": 2,
+        "name": "Black T-Shirt",
+        "type": "shirt",
+        "image_name": "black-t-shirt.jpg",
+        "alt_text": "A black t-shirt",
+        "price": 15.00,
+        "sizes": [
+            "Small",
+            "Medium",
+            "Large",
+            "Extra Large"
+        ],
+        "width_length_pairs": [
+            {
+                "width": 20,
+                "length": 28.5
+            },
+            {
+                "width": 21,
+                "length": 29
+            },
+            {
+                "width": 22,
+                "length": 29.5
+            },
+            {
+                "width": 23,
+                "length": 29.5
+            }
+        ], 
+        "description": "Comfortable, durable and simple black T-shirt with a cool logo on the front! Made of 100% cotton with unisex fit."
+    },
+    {
+        "_id": 3,
+        "name": "Navy T-Shirt",
+        "type": "shirt",
+        "image_name": "navy-t-shirt.jpg",
+        "alt_text": "A navy t-shirt",
+        "price": 15.00,
+        "sizes": [
+            "Small",
+            "Medium",
+            "Large"
+        ],
+        "width_length_pairs": [
+            {
+                "width": 20,
+                "length": 28.5
+            },
+            {
+                "width": 21,
+                "length": 29
+            },
+            {
+                "width": 22,
+                "length": 29.5
+            }
+        ], 
+        "description": "Comfortable, durable and simple navy T-shirt! Made of 90% cotton and 10% polyester with unisex fit."
+    },
+    {
+        "_id": 4,
+        "name": "Dark Blue Jeans",
+        "type": "pants",
+        "image_name": "dark-jeans.jpg",
+        "alt_text": "A pair of dark blue jeans",
+        "price": 20.00,
+        "sizes": [
+            "Small",
+            "Medium",
+            "Large",
+            "Extra Large"
+        ],
+        "width_length_pairs": [
+            {
+                "width": 26.75,
+                "length": 32.5
+            },
+            {
+                "width": 28.25,
+                "length": 34.5
+            },
+            {
+                "width": 31.5,
+                "length": 37.5
+            },
+            {
+                "width": 34.75,
+                "length": 40.5
+            }
+        ], 
+        "description": "Sleek dark blue jeans for all weather wear! Made of 100% cotton."
+    },
+    {
+        "_id": 5,
+        "name": "Light Blue Jeans",
+        "type": "pants",
+        "image_name": "light-jeans.jpg",
+        "alt_text": "A pair of light blue jeans",
+        "price": 20.00,
+        "sizes": [
+            "Small",
+            "Medium",
+            "Large"
+        ],
+        "width_length_pairs": [
+            {
+                "width": 26.75,
+                "length": 32.5
+            },
+            {
+                "width": 28.25,
+                "length": 34.5
+            },
+            {
+                "width": 31.5,
+                "length": 37.5
+            }
+        ], 
+        "description": "Sleek light blue jeans for all weather wear! Made of 71% cotton, 21% viscose, 6% elasomultiester and 2% elastane."
+    },
+    {
+        "_id": 6,
+        "name": "Navy Shorts",
+        "type": "pants",
+        "image_name": "navy-shorts.jpg",
+        "alt_text": "A pair of navy blue shorts",
+        "price": 25.00,
+        "sizes": [
+            "Small",
+            "Medium",
+            "Large",
+            "Extra Large"
+        ],
+        "width_length_pairs": [
+            {
+                "width": 26.75,
+                "length": 17.5
+            },
+            {
+                "width": 28.25,
+                "length": 18
+            },
+            {
+                "width": 31.5,
+                "length": 18.5
+            },
+            {
+                "width": 34.75,
+                "length": 19
+            }
+        ], 
+        "description": "Cool navy shorts for summertime! Made of 100% cotton."
+    },
+    {
+        "_id": 7,
+        "name": "Black Jacket",
+        "type": "jacket",
+        "image_name": "black-jacket.jpg",
+        "alt_text": "A black jacket",
+        "price": 30.00,
+        "sizes": [
+            "Small",
+            "Medium",
+            "Large",
+            "Extra Large"
+        ],
+        "width_length_pairs": [
+            {
+                "width": 21,
+                "length": 26.5
+            },
+            {
+                "width": 22.5,
+                "length": 28
+            },
+            {
+                "width": 24,
+                "length": 29.5
+            },
+            {
+                "width": 25.5,
+                "length": 31
+            }
+        ], 
+        "description": "A soft black jacket, perfect for wear during winter! Made of 100% cotton."
+    },
+    {
+        "_id": 8,
+        "name": "Blue Jacket",
+        "type": "jacket",
+        "image_name": "blue-jacket.jpg",
+        "alt_text": "A blue jacket",
+        "price": 30.00,
+        "sizes": [
+            "Small",
+            "Medium",
+            "Large",
+            "Extra Large",
+            "2XL"
+        ],
+        "width_length_pairs": [
+            {
+                "width": 21,
+                "length": 26.5
+            },
+            {
+                "width": 22.5,
+                "length": 28
+            },
+            {
+                "width": 24,
+                "length": 29.5
+            },
+            {
+                "width": 25.5,
+                "length": 31
+            },
+            {
+                "width": 26.5,
+                "length": 31.5
+            }
+        ], 
+        "description": "A soft blue jacket with white stripes, perfect for wear during winter! Made of 100% cotton."
+    },
+    {
+        "_id": 9,
+        "name": "Green Sweatshirt",
+        "type": "jacket",
+        "image_name": "green-sweatshirt.jpg",
+        "alt_text": "A green sweatshirt",
+        "price": 35.00,
+        "sizes": [
+            "Small",
+            "Medium",
+            "Large",
+            "Extra Large",
+            "2XL"
+        ],
+        "width_length_pairs": [
+            {
+                "width": 22,
+                "length": 27.5
+            },
+            {
+                "width": 23,
+                "length": 28.25
+            },
+            {
+                "width": 23.75,
+                "length": 29
+            },
+            {
+                "width": 24.5,
+                "length": 29.5
+            },
+            {
+                "width": 25.5,
+                "length": 30
+            }
+        ], 
+        "description": "A comfortable green sweatshirt with a soft fleece inside! Made of 60% cotton and 40% acrylic."
+    }
+]

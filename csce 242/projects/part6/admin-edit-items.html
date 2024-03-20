@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            Author: Johnny Hyman
+        -->
+        <title>Admin Edit Items</title>
+        <link rel="stylesheet" href="admin-edit-items-styles.css">
+    </head>
+
+    <body>
+        <div id="content">
+            <header>
+                <div class="columns header-top-container">
+                    <section class="col-1-of-3 flex-container signin-form">
+                        <form action="./admin-edit-items.html">
+                            <h3>Sign in</h3>
+                            <div class="input-box">
+                                <input id="username-input" type="username" placeholder="Username" required>
+                            </div>
+                            <div class="input-box">
+                                <input id="password-input" type="password" placeholder="Password" required>
+                                <button type="submit" id="login-button">Login</button>
+                            </div>
+                        </form>
+                    </section>
+                    <section class="col-1-of-3 flex-container main-logo">
+                        <a href="index.html"><img src="./logo-image/logo.png" alt="ClothingMania logo"></a>
+                    </section>
+                    <section class="col-1-of-3 flex-container your-cart">
+                        <a href="your-cart.html"><button id="your-cart-button">Your Cart</button></a>
+                    </section>
+                </div>
+                <div id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="columns header-bottom-container">
+                    <nav id="main-nav">
+                        <ul id="main-nav-list" class="columns hide-small">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop-all.html">Shop All</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <section class="columns-main">
+                    <section class="col-1-of-2">
+                        <h2>Add Item</h2>
+                        <form id="form-add-item">
+                            <section class="columns-main">
+                                <section class="col-1-of-2-inner">
+                                    <label for="input-item-id" class="block">Item ID</label>
+                                    <input type="number" name="input-item-id" id="input-item-id" placeholder="Item ID" required>
+                                </section>
+                                <section class="col-1-of-2-inner">
+                                    <label for="input-type" class="block">Item Type</label>
+                                    <select name="input-type">
+                                        <option value="shirt">shirt</option>
+                                        <option value="pants">pants</option>
+                                        <option value="jacket">jacket</option>
+                                    </select>
+                                </section>
+                            </section>
+                            <section class="columns-main">
+                                <section class="col-1-of-2-inner">
+                                    <label for="input-alt-text" class="block">Item Alt Text</label>
+                                    <input type="text" name="input-alt-text" id="input-alt-text" placeholder="Alt Text" required>
+                                </section>
+                                <section class="col-1-of-2-inner">
+                                    <label for="btn-item-image" class="block">Item Image</label>
+                                    <input type="file" name="btn-item-image" id="btn-item-image" required>
+                                </section>
+                            </section>
+                            <section class="columns-main">
+                                <section class="col-1-of-2-inner">
+                                    <label for="input-item-name" class="block">Item Name</label>
+                                    <input id="input-item-name" placeholder="Name" required>
+                                </section>
+                                <section class="col-1-of-2-inner">
+                                    <label for="input-item-price" class="block">Item Price</label>
+                                    <input id="input-item-price" placeholder="Price" required>
+                                </section>
+                            </section>                           
+                            <section class="columns-main">
+                                <section class="col-1-of-2-inner">
+                                    <label for="item-desc" class="block">Item Description</label>
+                                    <textarea name="item-desc" id="item-desc" placeholder="Description" required></textarea>
+                                </section>
+                                <section class="col-1-of-2-inner">
+                                    <label for="item-sizes" class="block">Item Sizes</label>
+                                    <ul id="item-sizes">
+                                        <li>
+                                            <input type="checkbox" name="size" id="cb-small">
+                                            <label for="cb-small">Small</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="size" id="cb-medium">
+                                            <label for="cb-medium">Medium</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="size" id="cb-large">
+                                            <label for="cb-large">Large</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="size" id="cb-extra-large">
+                                            <label for="cb-extra-large">Extra Large</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="size" id="cb-2xl">
+                                            <label for="cb-2xl">2XL</label>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </section>
+                            <label for="width-length-inputs" class="block">Item Width(s)/Length(s)</label>
+                            <section id="width-length-inputs">
+                                <p>Please select at least 1 size</p>
+                            </section>
+                            <button type="submit" id="btn-add" class="button">Confirm Add</button>
+                            <p id="add-result"></p>
+                            <section id="item-to-be-added"></section>
+                        </form>
+                    </section>
+                    <section class="col-1-of-2">
+                        <h2>Delete Item</h2>
+                        <form id="form-delete-item">
+                            <label for="input-item-id-delete" class="block">Item ID</label>
+                            <input name="input-item-id-delete" id="input-item-id-delete" placeholder="Item ID" required>
+                            <label for="text-area-reason" class="block">Reason For Deletion</label>
+                            <textarea name="text-area-reason" id="text-area-reason" placeholder="Enter a valid reason..." required></textarea>
+                            <p>
+                            <button type="submit" id="btn-confirm-action" class="button">Confirm Delete</button>
+                            </p>
+                            <p id="remove-result"></p>
+                            <section id="item-to-be-deleted"></section>
+                        </form>
+
+                    </section>
+                </section>
+            </main>
+            <footer>
+                <p>&copy; ClothingMania.com</p>
+                <p>Logo by <a href="https://www.adobe.com/express/create/logo">Adobe Express</a></p>
+                <p>Pictures by <a href="https://unsplash.com">Unsplash</a></p>
+            </footer>
+            <script src="admin-edit-items-script.js"></script>
+        </div>
+       
+    </body>
+</html>

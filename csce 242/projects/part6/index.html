@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            Author: Johnny Hyman
+        -->
+        <title>Home</title>
+        <link rel="stylesheet" href="index-styles.css">
+    </head>
+
+    <body>
+        <div id="content">
+            <header>
+                <div class="columns header-top-container">
+                    <section class="col-1-of-3 flex-container signin-form">
+                        <form action="./admin-edit-items.html">
+                            <h3>Sign in</h3>
+                            <div class="input-box">
+                                <input id="username-input" type="username" placeholder="Username" required>
+                            </div>
+                            <div class="input-box">
+                                <input id="password-input" type="password" placeholder="Password" required>
+                                <button type="submit" id="login-button">Login</button>
+                            </div>
+                        </form>
+                    </section>
+                    <section class="col-1-of-3 flex-container main-logo">
+                        <a href="index.html"><img src="./logo-image/logo.png" alt="ClothingMania logo"></a>
+                    </section>
+                    <section class="col-1-of-3 flex-container your-cart">
+                        <a href="your-cart.html"><button id="your-cart-button">Your Cart</button></a>
+                    </section>
+                </div>
+                <div id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="columns header-bottom-container">
+                    <nav id="main-nav">
+                        <ul id="main-nav-list" class="top-columns hide-small">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop-all.html">Shop All</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <section class="flex-container carousel">
+                    <h2>Newest Arrivals</h2>
+                    <a href="shop-all.html"><button id="shop-now-button">Shop Now</button></a>
+                </section>
+                <section id="most-popular">
+                    <h2>Most Popular</h2>
+                    <section id="bottom-most-popular"></section>
+                </section>
+            </main>
+            <footer>
+                <p>&copy; ClothingMania.com</p>
+                <p>Logo by <a href="https://www.adobe.com/express/create/logo">Adobe Express</a></p>
+                <p>Pictures by <a href="https://unsplash.com">Unsplash</a></p>
+            </footer>
+            <script src="index-script.js"></script>
+        </div>
+    </body>
+</html>

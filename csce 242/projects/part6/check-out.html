@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            Author: Johnny Hyman
+        -->
+        <title>Checkout</title>
+        <link rel="stylesheet" href="check-out-styles.css">
+    </head>
+
+    <body>
+        <div id="content">
+            <header>
+                <div class="columns header-top-container">
+                    <section class="col-1-of-3 flex-container signin-form">
+                        <form action="./admin-edit-items.html">
+                            <h3>Sign in</h3>
+                            <div class="input-box">
+                                <input id="username-input" type="username" placeholder="Username" required>
+                            </div>
+                            <div class="input-box">
+                                <input id="password-input" type="password" placeholder="Password" required>
+                                <button type="submit" id="login-button">Login</button>
+                            </div>
+                        </form>
+                    </section>
+                    <section class="col-1-of-3 flex-container main-logo">
+                        <a href="index.html"><img src="./logo-image/logo.png" alt="ClothingMania logo"></a>
+                    </section>
+                    <section class="col-1-of-3 flex-container your-cart">
+                        <a href="your-cart.html"><button id="your-cart-button">Your Cart</button></a>
+                    </section>
+                </div>
+                <div id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="columns header-bottom-container">
+                    <nav id="main-nav">
+                        <ul id="main-nav-list" class="columns hide-small">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop-all.html">Shop All</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <section class="main-columns">
+                    <section class="col-1-of-2 checkout-form">
+                        <h2>Checkout</h2>
+                        <form id="main-form">
+                            <section class="columns">
+                                <section class="col-1-of-2">
+                                    <label for="input-name" class="block">Name</label>
+                                    <input name="input-name" id="input-name" type="text" placeholder="Name" required>
+                                </section>
+                                <section class="col-1-of-2">
+                                    <label for="input-email" class="block">Email</label>
+                                    <input name="input-email" id="input-email" type="text" placeholder="Email" required>
+                                </section>
+                            </section>
+                            <label for="input-address" class="block">Address</label>
+                            <input name="input-address" id="input-address" type="text" placeholder="Address" required>
+                            <section class="columns">
+                                <section class="col-1-of-2">
+                                    <label for="input-city" class="block">City</label>
+                                    <input name="input-city" id="input-city" type="text" placeholder="City" required>
+                                </section>
+                                <section class="col-1-of-2">
+                                    <label for="input-state" class="block">State</label>
+                                    <input name="input-state" id="input-state" type="text" placeholder="State" required>
+                                </section>
+                            </section>
+                            <label for="input-card-number" class="block">Card Number</label>
+                            <input name="input-card-number" id="input-card-number" type="number" placeholder="Card Number" maxlength="16" minlength="16" required>
+                            <section class="columns">
+                                <section class="col-1-of-2">
+                                    <label for="input-expiration-date" class="block">Expiration Date</label>
+                                    <input name="input-expiration-date" id="input-expiration-date" type="number" placeholder="Expiration Date" maxlength="4" minlength="4" required>
+                                </section>
+                                <section class="col-1-of-2">
+                                    <label for="input-security-code" class="block">Security Code</label>
+                                    <input name="input-security-code" id="input-security-code" type="number" placeholder="Security Code" maxlength="3" required>
+                                </section>
+                            </section> 
+                        </form>
+                    </section>
+                    <section class="col-1-of-2 your-cart-section">
+                        <h2>Your Cart</h2>
+                        <table>
+                            <tr>
+                                <td class="table-img"><a href="item-page.html"><img src="./item-images/white-t-shirt.jpg" alt="White T-Shirt"></a></td>
+                                <td>
+                                    <h3>White T-Shirt</h3>
+                                    <h4>1</h4>
+                                    <h4>Small</h4>
+                                </td>
+                                <td>
+                                    <h3>$15.00</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-img"><a href="item-page.html"><img src="./item-images/light-jeans.jpg" alt="Light Blue Jeans"></a></td>
+                                <td>
+                                    <h3>Light Blue Jeans</h3>
+                                    <h4>1</h4>
+                                    <h4>Small</h4>
+                                </td>
+                                <td>
+                                    <h3>$20.00</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="table-img"><a href="item-page.html"><img src="./item-images/blue-jacket.jpg" alt="Blue Jacket"></a></td>
+                                <td>
+                                    <h3>Blue Jacket</h3>
+                                    <h4>2</h4>
+                                    <h4>Large</h4>
+                                </td>
+                                <td>
+                                    <h3>$30.00</h3>
+                                </td>
+                            </tr>
+                        </table>
+                        <h3 id="total-price-text">Total Price: $95.00</h3>
+                        <section class="columns btn-section">
+                            <section class="col-1-of-2">
+                                <a href="shop-all.html"><button id="btn-keep-shopping">Keep Shopping</button></a>
+                            </section>
+                            <section class="col-1-of-2">
+                                <button type="submit" id="btn-pay-now" form="main-form">Pay Now</button>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </main>
+            <footer>
+                <p>&copy; ClothingMania.com</p>
+                <p>Logo by <a href="https://www.adobe.com/express/create/logo">Adobe Express</a></p>
+                <p>Pictures by <a href="https://unsplash.com">Unsplash</a></p>
+            </footer>
+            <script src="check-out-script.js"></script>
+        </div>
+       
+    </body>
+</html>

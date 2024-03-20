@@ -1,0 +1,401 @@
+:root {
+    --body-bg-color: #19325C;
+    --bg-color: rgba(236, 236, 236, 0.2);
+    --content-bg-color: lightgray;
+    --main-text-color: #ECECEC;
+    --main-nav-link-color: #000000;
+    --link-hover-color: rgb(247, 247, 247);
+    --bg-hover-color: #A4F2Df;
+    --text-hover-color: #E33054;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: var(--body-bg-color);
+    font-family: Lato;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+}
+
+/* Structure */
+.col-1-of-3 {
+    /* border: 3px solid #000000; */
+    margin: 15px 0px;
+}
+
+.header-top-container,
+.header-bottom-container {
+    background: var(--content-bg-color);
+    border-radius: 20px;
+}
+
+.header-top-container,
+.header-bottom-container,
+#our-story,
+#meet-the-team {
+    background-color: var(--bg-color);
+    box-shadow: 0 0 10px;
+}
+
+.header-bottom-container {
+    margin-top: 20px;
+}
+
+#comments {
+    width: 300px;
+    height: 100px;
+}
+
+#name-input, 
+#email-input,
+#order-number-input {
+    width: 300px;
+}
+
+.signin-form,
+.main-logo,
+.your-cart {
+    padding: 20px 0px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+/***/
+footer {
+    padding-top: 20px;
+}
+
+footer p {
+    text-align: center;
+    /* padding-top: 20px; */
+    color: var(--main-text-color);
+}
+/***/
+footer a {
+    text-decoration: none;
+    color: var(--main-text-color);
+    padding: 3px;
+    border-radius: 5px;
+    transition: background-color 0.25s ease-out;
+}
+.input-box {
+    margin-bottom: 5px;
+}
+#login-button {
+    margin-left: 5px;
+}
+
+#content {
+    /* background: var(--bg-color); */
+    padding: 5px;
+    margin: auto; /* center horizontally */
+    border-radius: 5px;
+}
+
+.main-logo img {
+    display: block;
+    margin: auto;
+}
+
+/***/
+.main-logo img {
+    max-width: 300px;
+}
+
+.main-logo a {
+    display: block; 
+    margin: auto;
+}
+
+main {
+    background-color: var(--bg-color);
+    box-shadow: 0 0 10px;
+    border-radius: 20px;
+}
+/* 
+#name-email-flex-container,
+#last-half-form {
+    padding-left: 10%;
+} */
+
+.signin-form,
+.your-cart {
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-form h3 {
+    margin-top: 0px;
+}
+
+main h2,
+main p,
+form h3,
+::placeholder {
+    color: var(--main-text-color);
+}
+
+/**/
+#your-cart-button,
+#login-button,
+#btn-send,
+#comments,
+input {
+    background-color: transparent;
+    color: var(--main-text-color);
+    border-radius: 20px;
+    padding: 10px 15px;
+    border: 1px solid var(--main-text-color);
+    transition: background-color 0.25s ease-out;
+}
+
+#your-cart-button,
+#login-button,
+#btn-send {
+    background-color: var(--main-text-color);
+    color: var(--body-bg-color);
+    transition: background-color 0.25s ease-out;
+}
+
+/**/
+#your-cart-button:hover,
+#login-button:hover,
+#btn-send:hover,
+input:focus,
+#comments:focus {
+    background-color: var(--bg-hover-color);
+    border: 1px solid var(--body-bg-color);
+    color: var(--body-bg-color);
+    cursor: pointer;
+}
+
+#btn-send {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#main-form input{
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 20px 0px;
+    margin: 30px 0px;
+    text-align: center;
+}
+
+main p {
+    padding: 0px 30px;
+}
+
+/* Navigation */
+#main-nav li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+#main-nav ul {
+    padding-left: 0;
+    text-align: center;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: var(--main-nav-link-color);
+    font-size: 30px;
+}
+
+#main-nav a {
+    color: var(--main-text-color);
+}
+
+/**/
+#main-nav a {
+    padding: 20px 40px;
+    border-radius: 20px;
+    display: block;
+    transition: background-color 0.25s ease-out;
+}
+
+/**/
+#main-nav a:hover,
+footer a:hover {
+    background-color: var(--bg-hover-color);
+    color: var(--body-bg-color);
+    cursor: pointer;
+}
+
+/* Typography */
+#main-form label {
+    display: block;
+    color: var(--main-text-color);
+    font-size: 1.17em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* #main-form {
+    text-align: center;
+    margin-left: 20px;
+} */
+
+.one {
+    text-align: center;
+    margin: 0px 20px;
+}
+
+.one p {
+    text-align: center;
+}
+
+h3 {
+    color: var(--main-text-color);
+}
+
+/* Hamburger menu */
+#hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: var(--main-text-color);
+    margin: 6px 0;
+    padding-left: 5px;
+    transition: background-color 0.25s ease-out;
+}
+
+/**/
+#hamburger {
+    margin: auto;
+    background-color: var(--bg-color);
+    border-radius: 20px;
+    width: 30px;
+    /* margin: 30px; */
+    padding: 10px 30px;
+    box-shadow: 0 0 10px;
+    transition: background-color 0.25s ease-out;   
+}
+
+/**/
+#hamburger:hover {
+    background-color: var(--bg-hover-color);
+}
+
+/**/
+#hamburger:hover div {
+    background-color: var(--body-bg-color);
+}
+
+.hide {
+    display: none;
+}
+
+.hide-small {
+    display: none;
+}
+
+/* For larger resolutions */
+@media only screen and (min-width: 768px) {
+
+    .hide-small {
+        display: block;
+    }
+
+    main {
+        text-align: left;
+    }
+    #hamburger {
+        display: none;
+    }
+
+    .columns,
+    #name-email-flex-container,
+    #main-content-flex {
+        display: flex;
+    }
+
+    #name-email-flex-container,
+    #last-half-form {
+        margin: auto;
+        width: 60%;
+    }
+
+    #content {
+        width: 80%;
+    }
+
+    .header-top-container {
+        justify-content: space-between;
+    }
+
+    .col-1-of-3,
+    .col-1-of-2,
+    #main-nav li,
+    #main-nav,
+    .one {
+        flex: 1;
+    }
+
+    .signin-form {
+        justify-content: flex-start;
+        padding-left: 80px;
+        /* order: 1; */
+    }
+
+    .your-cart {
+        justify-content: flex-end;
+        padding-right: 110px;
+    }
+
+    main h2,
+    main p {
+        text-align: left;
+        padding-left: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 1005px) {
+    #main-nav-list,
+    .header-top-container {
+        flex-direction: column;
+    }
+
+    .header-top-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signin-form {
+        padding-left: 0px;
+    }
+    .your-cart {
+        padding-right: 0px;
+    }
+}
+@media only screen and (max-width: 1327px) {
+    #login-button {
+        margin-top: 5px;
+    }
+
+    #main-content-flex {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1460px) {
+    #main-form,
+    #name-email-flex-container {
+        display: block;
+        text-align: center;
+    }
+}

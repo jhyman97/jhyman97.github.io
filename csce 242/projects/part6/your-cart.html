@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--
+            Author: Johnny Hyman
+        -->
+        <title>Your Cart</title>
+        <link rel="stylesheet" href="your-cart-styles.css">
+    </head>
+
+    <body>
+        <div id="content">
+            <header>
+                <div class="columns header-top-container">
+                    <section class="col-1-of-3 flex-container signin-form">
+                        <form action="./admin-edit-items.html">
+                            <h3>Sign in</h3>
+                            <div class="input-box">
+                                <input id="username-input" type="username" placeholder="Username" required>
+                            </div>
+                            <div class="input-box">
+                                <input id="password-input" type="password" placeholder="Password" required>
+                                <button type="submit" id="login-button">Login</button>
+                            </div>
+                        </form>
+                    </section>
+                    <section class="col-1-of-3 flex-container main-logo">
+                        <a href="index.html"><img src="./logo-image/logo.png" alt="ClothingMania logo"></a>
+                    </section>
+                    <section class="col-1-of-3 flex-container your-cart">
+                        <a href="your-cart.html"><button id="your-cart-button">Your Cart</button></a>
+                    </section>
+                </div>
+                <div id="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="columns header-bottom-container">
+                    <nav id="main-nav">
+                        <ul id="main-nav-list" class="columns hide-small">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="shop-all.html">Shop All</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <main>
+                <h2>Your Cart</h2>
+                <table>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Size</th>
+                    </tr>
+                    <tr>
+                        <td class="flex-image-title">
+                            <section class="table-image">
+                                <a href="item-page.html"><img src="./item-images/white-t-shirt.jpg" alt="White T-Shirt"></a>
+                            </section>
+                            <section class="table-name">
+                                <p>White T-Shirt</p>
+                            </section>
+                        </td>
+                        <td>$15.00</td>
+                        <td>1</td>
+                        <td>Small</td>
+                    </tr>
+                    <tr>
+                        <td class="flex-image-title">
+                            <section class="table-image">
+                                <a href="item-page.html"><img src="./item-images/light-jeans.jpg" alt="Light Blue Jeans"></a>
+                            </section>
+                            <section class="table-name">
+                                <p>Light Blue Jeans</p>
+                            </section>
+                        </td>
+                        <td>$20.00</td>
+                        <td>1</td>
+                        <td>Small</td>
+                    </tr>
+                    <tr>
+                        <td class="flex-image-title">
+                            <section class="table-image">
+                                <a href="item-page.html"><img src="./item-images/blue-jacket.jpg" alt="Blue Jacket"></a>
+                            </section>
+                            <section class="table-name">
+                                <p>Blue Jacket</p>
+                            </section>
+                        </td>
+                        <td>$30.00</td>
+                        <td>2</td>
+                        <td>Large</td>
+                    </tr>
+                </table>
+                <section class="bottom-columns">
+                    <section id="special-instructions">
+                        <h3>Special Instructions for Seller</h3>
+                        <textarea id="text-area" placeholder="Special instructions..."></textarea>
+                    </section>
+                    <section id="btns-total">
+                        <section id="subtotal">
+                            <h3>Subtotal: $95.00</h3>
+                        </section>
+                        <section class="columns button-area">
+                            <section id="keep-shopping">
+                                <a href="shop-all.html"><button id="btn-keep-shopping">Keep Shopping</button></a>
+                            </section>
+                            <section id="check-out">
+                                <a href="check-out.html"><button id="btn-check-out">Check Out</button></a>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </main>
+            <footer>
+                <p>&copy; ClothingMania.com</p>
+                <p>Logo by <a href="https://www.adobe.com/express/create/logo">Adobe Express</a></p>
+                <p>Pictures by <a href="https://unsplash.com">Unsplash</a></p>
+            </footer>
+            <script src="your-cart-script.js"></script>
+        </div>
+       
+    </body>
+</html>
