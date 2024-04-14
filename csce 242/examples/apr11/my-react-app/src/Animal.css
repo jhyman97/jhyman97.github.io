@@ -1,0 +1,15 @@
+.animal {
+    background-color: darkkhaki;
+}
+
+.tiger {
+    background-color: orange;
+}
+
+.panda {
+    background-color: gray;
+}
+
+.animal img {
+    max-width: 200px;
+}
