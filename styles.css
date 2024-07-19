@@ -1,0 +1,160 @@
+:root {
+    --intro-bg: #242527;
+    --projects-bg: #45567D;
+    --header-bg: #BE3144;
+    --text-color: #F0F0F0;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: inherit;
+    background-color: var(--header-bg);
+    color: var(--text-color);
+    padding: 0 1.175em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+    width: 100%;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 1em;
+}
+
+li a {
+    display: block;
+    margin: 0 auto;
+    padding: 1em 0.5em;
+    transition: background-color 0.25s;
+}
+
+li a:hover {
+    background-color: var(--projects-bg);
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--intro-bg);
+    color: var(--text-color);
+}
+
+.projects {
+    background-color: var(--projects-bg);
+    text-align: center;
+    color: var(--text-color);
+    padding: 1.5rem 0;
+}
+
+.projects h2 {
+    margin-top: 0;
+}
+
+.projects__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.project img {
+    display: block;
+    max-width: 100%;
+}
+
+.project {
+    transition: transform 0.5s;
+}
+
+.project__title {
+    transition: background-color 0.5s, color 0.5s;
+    /* transition: color 0.5s; */
+}
+
+.project:hover {
+    transform: scale(1.125);
+}
+
+.project:hover .project__title{
+    background-color: var(--text-color);
+    color: var(--intro-bg);
+}
+
+.project__title {
+    width: 100%;
+    background-color: var(--intro-bg);
+}
+
+.project__title p {
+    margin: 0;
+    padding: 1.25rem 0;
+}
+
+.contact {
+    background-color: var(--intro-bg);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+.contact h2 {
+    margin-top: 0;
+}
+
+.link {
+    font-size: 1.175rem;
+    transition: transform 0.5s;
+}
+
+.link:hover {
+    transform: translate(0, 5px);
+}
+
+i {
+    margin: 0 0.35em;
+}
+
+@media (min-width: 768px) {
+    .projects__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+}
+
+@media (min-width: 1280px) {
+    .projects__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

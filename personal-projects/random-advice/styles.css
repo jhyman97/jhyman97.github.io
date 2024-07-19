@@ -1,0 +1,108 @@
+:root {
+    --background: #202632;
+    --container: #313A49;
+    --advice: #53FFAB;
+    --text: #CDE1E8;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: var(--background);
+}
+
+.container {
+    background-color: var(--container);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+    width: 80%;
+    max-width: 1000px;
+    border-radius: 30px;
+    position: relative;
+}
+
+/* .container:before {
+    position: absolute;
+    color: var(--text);
+    top: -100px;
+    left: -50px;
+    font-size: 350px;
+    opacity: 0.9;
+    font-family: Georgia, serif;
+    content: open-quote;
+    z-index: 999;
+} */
+
+
+
+
+.advice {
+    color: var(--advice);
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+#quote {
+    color: var(--text);
+    font-family: "Lexend", sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.5em;
+    /* animation-name: slide-in; 
+    animation-duration: 0.5s;  */
+}
+
+/* .animation__slide-in {
+    animation-name: slide-in;
+    animation-duration: 0.5s;
+} */
+
+/* @keyframes slide-in {
+    from {
+        transform: translateX(70px); 
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+} */
+
+button {
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    background-color: var(--advice);
+    color: var(--background);
+    border: 0;
+    font-size: 1rem;
+    border-radius: 10px;
+    padding: 1rem 2.5rem;
+    font-weight: bold;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3ab378;
+}
+
+/* .container-timer {
+    position: absolute;
+} */
+
+#timer {
+    content: '';
+    margin-top: 2em;
+    font-family: "Inter", sans-serif;
+    color: var(--text);
+    font-size: 1.175rem;
+}
